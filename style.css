@@ -1,0 +1,31 @@
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:  center;
+background-color: aquamarine ;
+position: relative;
+}
+.btn{
+   
+    width: 400px;
+    height: 400px;
+    background: url('images/2.jpg') no-repeat center center/cover;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+}
+.fa-heart{
+    color: red;
+}
+.btn .fa-heart{
+    position: absolute;
+    animation: grow 0.5s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
